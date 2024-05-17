@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>RaveBull</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Images/Favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Images/Favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Images/Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./Images/Favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-[#000536] text-white">
+    <header class="w-full relative z-[99]">
+      <div
+        class="w-full h-24 transition-all duration-500 bg-transparent fixed z-50 top-0 px-10 justify-between items-center left-0 head hidden"
+      >
+        <div class="h-full">
+          <img src="./Images/logo.jpeg" class="h-full" alt="" />
+        </div>
+        <button id="open">
+          <i class="ri-menu-line text-2xl"></i>
+        </button>
+      </div>
+      <nav
+        id="navbar"
+        class="px-20 flex bg-transparent navbar items-center fixed top-0 right-0 z-[99] h-24 w-full justify-between transition-all duration-500"
+      >
+        <div class="h-full logo">
+          <img src="./Images/logo.jpeg" class="h-full" alt="" />
+        </div>
+        <div class="nlinks">
+          <ul class="flex gap-10 font-bold">
+            <li><button id="topbtn" class="nlink outline-none">Top</button></li>
+            <li>
+              <button id="workbtn" class="nlink outline-none">
+                How it Operates
+              </button>
+            </li>
+            <li>
+              <button id="missionbtn" class="nlink outline-none">
+                The Mission
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="" class="font-bold">Documentation</a>
+        </div>
+        <button id="close" class="hidden">
+          <i class="ri-close-line text-2xl absolute top-5 right-6"></i>
+        </button>
+      </nav>
+    </header>
+    <main class="w-full">
+      <div
+        id="top"
+        class="w-full h-screen text-white relative lg:justify-end justify-center py-10 px-10 flex flex-col xl:px-40 px-10"
+      >
+        <div class="absolute z-10 w-full h-screen top-0 left-0">
+          <video
+            src="./Images/future city stock.mp4"
+            autoplay
+            loop
+            muted
+            class="w-full h-full object-cover"
+          ></video>
+        </div>
+        <div class="fixed w-full h-screen top-0 left-0">
+          <video
+            src="./Images/y2mate.com - High tech digital world background 4k_1080p.mp4"
+            autoplay
+            loop
+            muted
+            class="w-full h-full object-cover"
+          ></video>
+        </div>
+        <div class="lg:text-start text-center">
+          <h1
+            class="lg:text-3xl relative z-50 md:text-3xl text-xl lg:mb-0 md:mb-0 mb-5 font-semibold"
+          >
+            RaveBull
+          </h1>
+          <h3
+            class="xl:text-9xl lg-md:text-7xl relative z-50 md-sm:text-5xl xs:text-3xl tracking-tighter"
+          >
+            Fixed rates. Flexibility <br class="xl:block hidden" />
+            everywhere else.
+          </h3>
+        </div>
+        <div class="flex justify-between w-full items-start relative z-50">
+          <div class="flex flex-col items-end">
+            <p
+              class="lg:w-2/4 lg:text-start text-center mt-5 text-sm font-light"
+            >
+              RaveBull, an Ethereum protocol, facilitates undercollateralized
+              on-chain credit facilities, allowing borrowers to customize
+              parameters to their preferences. Lenders benefit from innovative
+              interest rate and withdrawal mechanisms.
+            </p>
+            <div
+              class="flex lg:w-2/4 w-full lg:justify-start justify-center relative z-50 mt-10 gap-4"
+            >
+              <button
+                class="lg:p-4 lg:px-6 md:p-3 md:px-5 py-2 px-4 bg-white border-2 border-white text-gray-800 hover:bg-transparent hover:text-white font-bold transition-all duration-500 rounded-md"
+              >
+                Become a Borrower
+              </button>
+              <button
+                class="lg:p-4 lg:px-6 md:p-3 md:px-5 py-2 px-4 bg-white border-2 border-white text-gray-800 hover:bg-transparent hover:text-white font-bold transition-all duration-500 rounded-md"
+              >
+                App
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="itworks"
+        class="w-full relative z-50 min-h-screen text-center xl:px-52 lg:px-36 px-10 py-28"
+      >
+        <h1 class="text-2xl font-semibold">How RaveBull Operates</h1>
+        <div
+          class="w-full grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 mt-10"
+        >
+          <div class="flex flex-col gap-10">
+            <div class="w-full h-auto rounded-xl p-5 py-10 bg">
+              <h1 class="text-xl font-semibold">Borrower Enrollment</h1>
+              <p class="mt-5">
+                Borrowers submit an onboarding request to RaveBull and undergo a
+                protocol KYC process to obtain authorization for market
+                deployment.
+              </p>
+              <div class="h-[25rem]">
+                <img src="./Images/inroll.png" class="h-full mx-auto" alt="" />
+              </div>
+            </div>
+            <div class="w-full h-auto rounded-xl p-5 py-10 bg">
+              <h1 class="text-xl font-semibold">Asset Deposit by Lenders</h1>
+              <p class="mt-5">
+                Lenders deposit assets as credit, receiving interest-bearing
+                debt tokens in return. These tokens are transferrable, offering
+                flexibility in their usage.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-10">
+            <div class="w-full h-1/2 rounded-xl p-5 pb-0 py-10 bg">
+              <h1 class="text-xl font-semibold">Market Configuration</h1>
+              <p class="mt-5">
+                Borrowers define market terms upon deployment: APR, maximum
+                borrowing limit, reserve ratio, withdrawal cycle length, and
+                more.
+              </p>
+              <div class="h-52">
+                <img
+                  src="./Images/configuration.png"
+                  class="h-full mx-auto"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="w-full h-1/2 rounded-xl p-5 pb-0 py-10 bg">
+              <h1 class="text-xl font-semibold">Lender Authorization</h1>
+              <p class="mt-5">
+                Borrowers choose which addresses can lend to their markets.
+                Wildcat does not restrict the lender selection process, leaving
+                it to the borrower's discretion.
+              </p>
+              <div class="h-52">
+                <img src="./Images/lender.png" class="h-full mx-auto" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-auto rounded-xl p-5 py-10 bg">
+            <h1 class="text-xl font-semibold">
+              Credit Utilization by Borrowers
+            </h1>
+            <p class="mt-5">
+              Borrowers can access a portion of the extended credit, returning
+              assets upon withdrawal requests from lenders.
+            </p>
+            <div class="h-52">
+              <img
+                src="./Images/utilization.png"
+                class="h-full mx-auto"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="w-full h-auto rounded-xl p-5 py-10 bg">
+            <h1 class="text-xl font-semibold">The Rest Is Up to You</h1>
+            <p class="mt-5">
+              Borrowers can adjust APR and market capacity as needed, contingent
+              upon existing debt and liquid asset amounts in market reserves.
+            </p>
+            <div class="h-52">
+              <img src="./Images/rest.png" class="h-full mx-auto" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full relative z-50 py-20 flex flex-col items-center">
+        <h1 class="lg:text-5xl md:text-4xl text-3xl font-semibold text-center">
+          Curious to Learn More?
+        </h1>
+        <h3 class="mt-12 lg:text-xl">Explore Further as a:</h3>
+        <div class="flex mt-10 gap-4">
+          <button
+            class="p-2 px-6 bg-white border-2 border-white text-gray-800 hover:bg-transparent hover:text-white font-bold transition-all duration-500 rounded-md"
+          >
+            Borrower
+          </button>
+          <button
+            class="p-2 px-6 bg-white border-2 border-white text-gray-800 hover:bg-transparent hover:text-white font-bold transition-all duration-500 rounded-md"
+          >
+            Lender
+          </button>
+        </div>
+      </div>
+      <div class="w-full relative z-50 min-h-screen py-10 xl:px-52 lg:px-36 px-10">
+        <h1 class="text-2xl font-semibold text-center w-full">
+          Simple Concept with Numerous Advantages
+        </h1>
+        <div
+          class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 py-20 pt-16 gap-10"
+        >
+          <div class="w-full bg rounded-xl p-10">
+            <div class="w-full h-52">
+              <img src="./Images/flexible.png" class="mx-auto h-full" alt="" />
+            </div>
+            <div class="text-center mt-10">
+              <h1 class="text-2xl font-semibold">
+                Flexible Borrowing for Varied Needs
+              </h1>
+              <p class="mt-5">
+                Whether you're a market maker building inventory, a fund seeking
+                exposure, or a DAO diversifying assets, RaveBull markets can
+                cater to your requirements.
+              </p>
+            </div>
+          </div>
+          <div class="w-full bg rounded-xl p-10">
+            <div class="w-full h-52">
+              <img
+                src="./Images/streamline.png"
+                class="mx-auto h-full"
+                alt=""
+              />
+            </div>
+            <div class="text-center mt-10">
+              <h1 class="text-2xl font-semibold">
+                Streamline Loan Back-Office Costs
+              </h1>
+              <p class="mt-5">
+                The customizable nature of RaveBull market parameters, coupled
+                with full visibility into actions and interest accrued, can
+                reduce administrative expenses.
+              </p>
+            </div>
+          </div>
+          <div class="w-full bg rounded-xl p-10">
+            <div class="w-full h-52">
+              <img
+                src="./Images/effortless.png"
+                class="mx-auto h-full"
+                alt=""
+              />
+            </div>
+            <div class="text-center mt-10">
+              <h1 class="text-2xl font-semibold">
+                Effortless Recording of On-Chain Debt
+              </h1>
+              <p class="mt-5">
+                RaveBull market tokens' rebasing feature enables lenders to
+                track owed amounts in real-time by simply checking their
+                balance.
+              </p>
+            </div>
+          </div>
+          <div class="w-full bg rounded-xl p-10">
+            <div class="w-full h-52">
+              <img src="./Images/design.png" class="h-full mx-auto" alt="" />
+            </div>
+            <div class="text-center mt-10">
+              <h1 class="text-2xl font-semibold">
+                Transparency and Security by Design
+              </h1>
+              <p class="mt-5">
+                RaveBull brings credit agreements on-chain transparently,
+                providing users with access to detailed market parameters and
+                real-time logs for monitoring.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full relative z-50 xl:px-52 lg:px-36 px-10 lg:py-0 md:py-0 py-10 bg-l">
+        <div
+          class="mt-10 flex lg:flex-row md:flex-row sm:flex-row flex-col-reverse gap-10 items-center"
+        >
+          <div class="lg:w-2/5 md:w-2/5 sm:w-2/5 w-full">
+            <img src="./Images/design.png" class="h-full" alt="" />
+          </div>
+          <div class="lg:w-3/5 md:w-3/5 sm:w-3/5 w-full">
+            <h1
+              class="text-2xl lg:text-start md:text-start sm:text-start text-center font-semibold"
+            >
+              Transparency and Security by Design
+            </h1>
+            <p
+              class="mt-4 lg:text-start md:text-start sm:text-start text-center"
+            >
+              RaveBull brings credit agreements on-chain transparently,
+              providing users with access to detailed market parameters and
+              real-time logs for monitoring.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="themission" class="w-full relative z-50 xl:px-52 lg:px-24 px-10 py-28">
+        <div
+          class="w-full h-full bg py-20 lg:flex-row flex-col-reverse rounded-2xl flex items-center"
+        >
+          <div
+            class="lg:w-3/5 w-full lg:text-start text-center lg:px-10 md:px-8 px-6"
+          >
+            <h3 class="text-2xl font-semibold">The Mission</h3>
+            <h1 class="mt-10 lg:text-xl font-semibold">
+              RaveBull offers unprecedented freedom for on-chain credit
+              facilitation, guided by utilitarian principles shaping the future
+              of decentralized credit.
+            </h1>
+            <h3 class="mt-4 text-sm font-light">
+              We advocate for individuals' rights to choose whom to lend to or
+              borrow from, to define credit terms that suit their needs, and to
+              exercise freedom in contracting.
+            </h3>
+            <h5 class="mt-4 lg:text-xl font-semibold">
+              The RaveBull Protocol - redefining banking for the digital age.
+            </h5>
+            <button
+              class="p-2 px-6 mt-10 bg-white border-2 border-white text-gray-800 hover:bg-transparent hover:text-white font-bold transition-all duration-500 rounded-md"
+            >
+              Discover Our Manifesto
+            </button>
+          </div>
+          <div class="lg:w-2/5">
+            <img src="./Images/mission.png" class="w-full" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="w-full relative z-50">
+      <div
+        class="footer w-full bg xl:px-52 lg:px-24 px-10 py-10 flex justify-between items-center"
+      >
+        <h2 class="text-xl font-semibold">
+          All Rights Reserved &copy; RaveBull
+        </h2>
+        <div class="flex items-center gap-4">
+          <li>
+            <a href="https://twitter.com/Rav_ebull" target="_blank">
+              <i class="ri-twitter-fill text-2xl"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ri-facebook-box-fill text-2xl"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ri-linkedin-box-fill text-2xl"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ri-instagram-fill text-2xl"></i>
+            </a>
+          </li>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

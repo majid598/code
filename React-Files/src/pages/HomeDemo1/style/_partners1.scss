@@ -1,0 +1,17 @@
+/* ##### Partners Area ##### */
+.HomeDemo1 .partners{
+    padding: 0 0 70px
+}
+.HomeDemo1 .partner-box{
+    border: 1px solid #c4043c;
+    padding: 20px 10px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ff00483a;
+    margin-bottom: 30px;
+    transition: all .3s ease-in-out;
+}
+.HomeDemo1 .partner-box:hover{
+    background: #c4043c;
+    cursor: pointer;
+}

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowcash</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-full bg-[#010314] text-white">
+    <header class="w-full">
+      <div
+        id="head"
+        class="w-full head transition-all duration-500 fixed top-0 left-0 h-28 z-[80] hidden pr-12 px-5 justify-between items-center"
+      >
+        <div class="h-full">
+          <img src="./assets/images/logo.png" class="h-full" alt="" />
+        </div>
+        <button id="open" class="text-2xl">
+          <i class="ri-menu-line"></i>
+        </button>
+      </div>
+      <nav
+        id="navbar"
+        class="navbar w-full fixed z-[99] transition-all duration-500 top-0 right-0 h-36 px-20 flex items-center justify-between"
+      >
+        <button id="close" class="absolute hidden top-4 right-6 text-2xl">
+          <i class="ri-close-line"></i>
+        </button>
+        <div class="h-full logo">
+          <img src="./assets/images/logo.png" class="h-full" alt="" />
+        </div>
+        <div class="py-10 h-full">
+          <ul
+            class="nlinks px-20 text-sm font-bold rounded-full border-2 h-full border-white flex items-center gap-10"
+          >
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">How it works</a>
+            </li>
+            <li>
+              <a href="">Transparency</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="" class="text-sm font-bold">Documentation</a>
+        </div>
+      </nav>
+    </header>
+    <main class="lg:px-10 md:px-10 sm:px-10 px-6">
+      <div class="w-full opacity-30 h-full fixed top-0 left-0">
+        <video
+          autoplay
+          muted
+          loop
+          src="./assets/images/bg-video.mp4"
+          class="w-full h-full object-cover"
+        ></video>
+      </div>
+      <div
+        class="w-full relative z-50 bg-[url('./assets/images/bg.png')] py-12 bg-norepeat bg-cover h-screen pt-36"
+      >
+        <div
+          class="w-full px-10 h-full bg-l flex items-center justify-center rounded-bl-[3rem] rounded-br-[3rem] flex-col"
+        >
+          <h1
+            class="lg:text-5xl md-m:text-3xl md:text-5xl xl:text-7xl font-semibold text-center"
+          >
+            Introducing the Ultimate DeFi
+            <br class="lg:block md:block hidden" />
+            SuperApp
+          </h1>
+          <h3
+            class="xl:text-3xl lg:text-2xl md:text-xl text-sm lg:mt-10 md:mt-10 sm:mt-6 mt-5"
+          >
+            Revolutionizing Liquidity Provision
+          </h3>
+          <button
+            class="lg:mt-12 md:mt-10 sm:mt-8 mt-6 lg:px-6 md:px-6 px-4 lg:py-4 md:py-3 py-2 rounded-md bg-white border border-white text-zinc-700 font-bold relative overflow-hidden after:content-[''] after:w-full after:h-full after:absolute after:-bottom-full after:bg-zinc-800 hover:text-white relative after:left-0 overflow-hidden transition-all duration-500 after:rounded-[50%] after:transition-all after:duration-300 hover:after:bottom-0 hover:after:rounded-none focus:outline-none"
+          >
+            <span class="relative z-10">Start Earning</span>
+          </button>
+        </div>
+      </div>
+      <div
+        class="boxes max-w-[1100px] mx-auto relative pt-36 flex items-center justify-between h-screen py-10"
+      >
+        <div
+          class="w-full h-full flex items-center justify-center text-center flex-col absolute top-0 left-0"
+        >
+          <div>
+            <h2 class="text-xl font-semibold">Challenge ?</h2>
+            <h1 class="text-3xl font-semibold">Existing DeFi Solutions</h1>
+          </div>
+          <p class="w-1/3 text-center mt-5">
+            Market makers and trading firms exploit cheap capital for exclusive
+            strategies, hindering everyday user participation.
+          </p>
+        </div>
+        <div
+          class="w-[15rem] sm-m:w-[12rem] h-full flex flex-col justify-between"
+        >
+          <div class="w-full h-2/6 bg relative rounded-2xl">
+            <img
+              src="./assets/images/2.png"
+              class="absolute -left-10 object-contain top-1/2 -translate-y-1/2"
+              alt=""
+            />
+            <div
+              class="w-full sm-m:text-sm font-semibold flex justify-center py-4 rounded-full border-2 top-1/2 -translate-y-1/2 absolute left-1/2"
+            >
+              - Stifling DeFi Progress
+            </div>
+          </div>
+          <div class="w-full h-2/6 bg relative rounded-2xl">
+            <img
+              src="./assets/images/4.png"
+              class="absolute -left-10 object-contain top-1/2 -translate-y-1/2"
+              alt=""
+            />
+            <div
+              class="w-full sm-m:text-sm font-semibold flex justify-center py-4 rounded-full border-2 top-1/2 -translate-y-1/2 absolute left-1/2"
+            >
+              - Fragmented Platforms
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[15rem] sm-m:w-[12rem] h-full flex flex-col justify-between"
+        >
+          <div class="w-full h-2/6 bg relative rounded-2xl">
+            <img
+              src="./assets/images/3.png"
+              class="absolute -right-10 object-contain top-1/2 -translate-y-1/2"
+              alt=""
+            />
+            <div
+              class="w-full sm-m:text-sm font-semibold flex justify-center py-4 rounded-full border-2 top-1/2 -translate-y-1/2 absolute right-1/2"
+            >
+              - Subpar Offerings
+            </div>
+          </div>
+          <div class="w-full h-2/6 bg relative rounded-2xl">
+            <img
+              src="./assets/images/5.png"
+              class="absolute -right-10 object-contain top-1/2 -translate-y-1/2"
+              alt=""
+            />
+            <div
+              class="w-full sm-m:text-sm font-semibold flex justify-center py-4 rounded-full border-2 top-1/2 -translate-y-1/2 absolute right-1/2"
+            >
+              - Lack of Flexibility
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxes-responsive relative z-50 pt-28 w-full hidden">
+        <div class="text-center flex flex-col items-center">
+          <h2 class="text-xl font-semibold">Challenge ?</h2>
+          <h1 class="text-3xl font-semibold">Existing DeFi Solutions</h1>
+          <p class="w-2/3 xs:w-full text-center mt-5">
+            Market makers and trading firms exploit cheap capital for exclusive
+            strategies, hindering everyday user participation.
+          </p>
+        </div>
+        <div
+          class="mt-20 flex justify-center text-sm flex-wrap gap-4 items-center"
+        >
+          <div class="flex w-44 flex-col gap-4 items-center">
+            <div class="bg w-full rounded-lg">
+              <img src="./assets/images/2.png" class="" alt="" />
+            </div>
+            <div class="w-full text-center py-3 rounded-sm border">
+              - Stifling DeFi Progress
+            </div>
+          </div>
+          <div class="flex w-44 flex-col gap-4 items-center">
+            <div class="bg w-full rounded-lg">
+              <img src="./assets/images/4.png" class="" alt="" />
+            </div>
+            <div class="w-full text-center py-3 rounded-sm border">
+              - Fragmented Platforms
+            </div>
+          </div>
+          <div class="flex w-44 flex-col gap-4 items-center">
+            <div class="bg w-full rounded-lg">
+              <img src="./assets/images/3.png" class="" alt="" />
+            </div>
+            <div class="w-full text-center py-3 rounded-sm border">- Subpar Offerings</div>
+          </div>
+          <div class="flex w-44 flex-col gap-4 items-center">
+            <div class="bg w-full rounded-lg">
+              <img src="./assets/images/5.png" class="" alt="" />
+            </div>
+            <div class="w-full text-center py-3 rounded-sm border">- Lack of Flexibility</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full relative z-50 xl:px-20 mx-auto md-m:min-h-screen pt-36 justify-center flex flex-col"
+      >
+        <div>
+          <h2 class="text-xl font-semibold">Solution:</h2>
+          <h1 class="text-3xl font-semibold">Optimized Capital Utilisation</h1>
+          <p class="lg:w-1/2 md:w-1/2 mt-4">
+            At Flowcash, our mission is to develop capital-efficient products,
+            enhancing user appeal and advancing the industry.
+          </p>
+        </div>
+        <div class="mt-12 md-m:flex">
+          <div class="w-full md-m:flex-col flex justify-evenly">
+            <span
+              class="font-semibold lg-md:text-xs after:content-[''] after:h-5 after:w-[2px] after:rounded-full after:bg-white relative after:absolute after:top-10 after:left-1/2 after:-translate-x-1/2"
+              >+ Bridging Traditional Finance and DeFi</span
+            >
+            <span
+              class="font-semibold lg-md:text-xs after:content-[''] after:h-5 after:w-[2px] after:rounded-full after:bg-white relative after:absolute after:top-10 after:left-1/2 after:-translate-x-1/2"
+              >+ Elevating Traditional Finance Standards</span
+            >
+            <span
+              class="font-semibold lg-md:text-xs after:content-[''] after:h-5 after:w-[2px] after:rounded-full after:bg-white relative after:absolute after:top-10 after:left-1/2 after:-translate-x-1/2"
+              >+ Igniting DeFi Expansion</span
+            >
+            <span
+              class="font-semibold lg-md:text-xs after:content-[''] after:h-5 after:w-[2px] after:rounded-full after:bg-white relative after:absolute after:top-10 after:left-1/2 after:-translate-x-1/2"
+              >+ Maximizing Yield Opportunities</span
+            >
+          </div>
+          <div
+            class="w-full md-m:vertical p-2 h-8 mt-16 rounded-full bg-[#1C1D34]"
+          >
+            <div class="w-11/12 bg-l-r h-full vertical:bg-l rounded-full"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full relative z-50 xl:px-[5vw] flex flex-col justify-between min-h-screen py-10 pt-36"
+      >
+        <div class="lg:text-start text-center">
+          <h2 class="text-3xl font-semibold">Our Offerings</h2>
+          <p class="font-semibold mt-4">
+            We're crafting a capital-efficient platform to propel DeFi adoption
+            to new heights.
+          </p>
+        </div>
+        <div class="w-full grid xl:grid-cols-3 lg:grid-cols-2 gap-10 mt-10">
+          <div
+            class="w-full min-h-[30rem] rounded-2xl py-10 lg:px-10 md:px-10 sm:px-8 px-4 bg-[#0F101E] border border-[#1B1D29]"
+          >
+            <div class="flex h-1/6 justify-center gap-2 items-center">
+              <img src="./assets/images/usdc.svg" class="w-10" alt="" />
+              <h2 class="text-3xl font-semibold">USDC</h2>
+            </div>
+            <div class="h-2/6">
+              <p class="text-center mt-5 lg-md:text-sm">
+                This vault leverages non-directional trades for high yields. By
+                simultaneously going long and short, it gathers funding from
+                shorts without exposure to downside risks.
+              </p>
+            </div>
+            <div
+              class="py-3 border-t border-[#3e4152] flex justify-between mt-10"
+            >
+              <h2 class="text-zinc-300">Return</h2>
+              <span class="text-sm lg-md:text-xs">HIGH, variable</span>
+            </div>
+            <div class="py-3 border-t border-[#3e4152] flex justify-between">
+              <h2 class="text-zinc-300">Risks</h2>
+              <span class="text-sm lg-md:text-xs"
+                >Execution failure, smart contract risk, <br />
+                counterparty risk</span
+              >
+            </div>
+            <div class="py-3 border-t border-[#3e4152] flex justify-between">
+              <h2 class="text-zinc-300">Locked Value</h2>
+              <h3 class="text-sm lg-md:text-xs">
+                6,880,146.20 <span class="text-zinc-300"> USDC </span>
+              </h3>
+            </div>
+          </div>
+          <div
+            class="w-full min-h-[30rem] rounded-2xl py-10 lg:px-10 md:px-10 sm:px-8 px-4 bg-[#0F101E] border border-[#1B1D29]"
+          >
+            <div class="flex h-1/6 justify-center gap-2 items-center">
+              <img src="./assets/images/eth.svg" class="w-10" alt="" />
+              <h2 class="text-3xl font-semibold">ETH</h2>
+            </div>
+            <div class="h-2/6">
+              <p class="text-center mt-5 lg-md:text-sm">
+                Utilizing the same strategy as the USDC vault, this option earns
+                in ETH terms. Profits are reinvested in ETH, enabling higher
+                yields compared to traditional staking.
+              </p>
+            </div>
+            <div
+              class="py-3 border-t border-[#3e4152] flex justify-between mt-10"
+            >
+              <h2 class="text-zinc-300">Return</h2>
+              <span class="text-sm lg-md:text-xs">HIGH, variable</span>
+            </div>
+            <div class="py-3 border-t border-[#3e4152] flex justify-between">
+              <h2 class="text-zinc-300">Risks</h2>
+              <span class="text-sm lg-md:text-xs"
+                >Execution failure, smart contract risk, <br />
+                counterparty risk</span
+              >
+            </div>
+            <div class="py-3 border-t border-[#3e4152] flex justify-between">
+              <h2 class="text-zinc-300">Locked Value</h2>
+              <h3 class="text-sm lg-md:text-xs">
+                552.37 <span class="text-zinc-300"> WETH </span>
+              </h3>
+            </div>
+          </div>
+          <div
+            class="w-full min-h-[30rem] rounded-2xl py-10 lg:px-10 md:px-10 sm:px-8 px-4 bg-[#0F101E] border border-[#1B1D29]"
+          >
+            <div class="flex h-1/6 justify-center gap-2 items-center">
+              <img src="./assets/images/btc.svg" class="w-10" alt="" />
+              <h2 class="text-3xl font-semibold">BTC</h2>
+            </div>
+            <div class="h-2/6">
+              <p class="text-center mt-5 lg-md:text-sm">
+                Similar to the USDC vault, this option earns in wBTC terms.
+                Profits are utilized to acquire more BTC, generating attractive
+                yields.
+              </p>
+            </div>
+            <div
+              class="py-3 border-t border-[#3e4152] flex justify-between mt-10"
+            >
+              <h2 class="text-zinc-300">Return</h2>
+              <span class="text-sm lg-md:text-xs">HIGH, variable</span>
+            </div>
+            <div class="py-3 border-t border-[#3e4152] flex justify-between">
+              <h2 class="text-zinc-300">Risks</h2>
+              <span class="text-sm lg-md:text-xs"
+                >Execution failure, smart contract risk, <br />
+                counterparty risk</span
+              >
+            </div>
+            <div class="py-3 border-t border-[#3e4152] flex justify-between">
+              <h2 class="text-zinc-300">Locked Value</h2>
+              <h3 class="text-sm lg-md:text-xs">
+                116.48 <span class="text-zinc-300"> WBTC </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full relative z-50 h-screen xl:px-20 py-10 pt-44">
+        <div
+          class="w-full h-full rounded-[3rem] overflow-hidden bg-[url(./assets/images/bg.png)] bg-cover bg-norepeat"
+        >
+          <div
+            class="w-full h-full bg-l flex flex-col items-center justify-center"
+          >
+            <h2
+              class="lg:text-5xl text-3xl md:text-5xl xl:text-7xl font-semibold text-center"
+            >
+              Upcoming
+            </h2>
+            <h2 class="xl:text-3xl lg:text-2xl md:text-xl text-sm mt-5">
+              Decentralized Exchange
+            </h2>
+            <button
+              id="btn"
+              class="bg lg:w-20 lg:h-20 md:w-14 md:h-14 w-10 h-10 after:transition-all after:duration-500 border border-[#00ffcc] hover:after:scale-100 after:scale-0 btn flex items-center justify-center rounded-full mt-10 after:content-[''] after:w-full after:h-full after:bg-[#0F101E] after:rounded-full after:absolute relative"
+            >
+              <i
+                class="ri-arrow-down-line lg:text-3xl md:text-3xl sm:text-2xl text-xl relative z-10"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="build"
+        class="w-full relative z-50 h-screen py-10 xl:px-20 pt-44"
+      >
+        <div
+          class="w-full h-full p-5 bg-[#0F101E] text-center border-2 border-[#1B1D29] lg:rounded-[3rem] md:rounded-[2.5rem] rounded-[1rem] flex items-center justify-center flex-col"
+        >
+          <h1
+            class="lg:text-5xl text-3xl md:text-5xl xl:text-7xl font-semibold text-center"
+          >
+            Build with Flowcash
+          </h1>
+          <p class="lg:w-1/2 md:w-1/2 xs:text-xs mt-5">
+            We're creating a suite of products harnessing opportunities from
+            traditional finance markets to enrich the DeFi ecosystem.
+          </p>
+          <div class="w-full flex mt-12 lg:flex-row md:flex-row sm:flex-row justify-center flex-col gap-4">
+            <button
+              class="lg:px-6 md:px-6 px-4 lg:py-4 md:py-3 py-2 rounded-md bg-white border border-white text-zinc-700 font-bold relative overflow-hidden after:content-[''] after:w-full after:h-full after:absolute after:-bottom-full after:bg-zinc-800 hover:text-white relative after:left-0 overflow-hidden transition-all duration-500 after:rounded-[50%] after:transition-all after:duration-300 hover:after:bottom-0 hover:after:rounded-none focus:outline-none"
+            >
+              <span class="relative z-10">Contact us</span>
+            </button>
+            <button
+              class="lg:px-6 md:px-6 px-4 lg:py-4 md:py-3 py-2 rounded-md bg-white border border-white text-zinc-700 font-bold relative overflow-hidden after:content-[''] after:w-full after:h-full after:absolute after:-bottom-full after:bg-zinc-800 hover:text-white relative after:left-0 overflow-hidden transition-all duration-500 after:rounded-[50%] after:transition-all after:duration-300 hover:after:bottom-0 hover:after:rounded-none focus:outline-none"
+            >
+              <span class="relative z-10">Launch app</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="w-full mt-32 relative z-50">
+      <div class="w-full px-10 bg-[#0F101E]">
+        <div class="w-full xl:px-20 py-12 flex items-center justify-between">
+          <h2 class="text-xl font-semibold">
+            All Rights Reserved &copy; Flowcash
+          </h2>
+          <div class="flex items-center gap-4">
+            <li>
+              <a
+                href="https://twitter.com/flo_wcash"
+                target="_blank"
+                class="rounded-md h-10 w-10 flex items-center justify-center border transition-all duration-500 hover:bg-[#00FFCC]"
+              >
+                <i class="ri-twitter-fill text-xl"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="rounded-md h-10 w-10 flex items-center justify-center border transition-all duration-500 hover:bg-[#00FFCC]"
+              >
+                <i class="ri-facebook-fill text-xl"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="rounded-md h-10 w-10 flex items-center justify-center border transition-all duration-500 hover:bg-[#00FFCC]"
+              >
+                <i class="ri-linkedin-fill text-xl"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="rounded-md h-10 w-10 flex items-center justify-center border transition-all duration-500 hover:bg-[#00FFCC]"
+              >
+                <i class="ri-instagram-line text-xl"></i>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
